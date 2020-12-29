@@ -21,6 +21,7 @@ a {
 	transition: .3s all ease
 }
 
+
 a:hover {
 	text-decoration: none
 }
@@ -2358,6 +2359,12 @@ h5,
 .section-title {
 	color: #000;
 	font-size: 40px;
+	font-weight: 900
+}
+
+.section-title-units  {
+	color: #000;
+	font-size: 25px;
 	font-weight: 900
 }
 
