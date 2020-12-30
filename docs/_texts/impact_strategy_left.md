@@ -1,3 +1,3 @@
 ## Digital Transformation
 
-**Adoption of Digital Technology by the PA** to promote effectiveness and sustainability, to ensure transparency and inclusiveness, to attract the skills that are necessary to drive the change.
+Promote the **adoption of digital technology by Public Administrations** to support effectiveness, efficiency and sustainability, to achieve better transparency and inclusiveness; to help the development of the **skills** necessary to drive the change.
