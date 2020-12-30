@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
 	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/cookiealert.css">
 	<link rel="stylesheet" href="css/style.css">
 
 	<meta name="title" content="Digital Society - FBK">
@@ -382,10 +383,11 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
 				<div class="row pt-1 mt-1 justify-content-center">
 					<div class="col-sm-8">
 						<h2 class="footer-heading mb-4">About FBK</h2>
-							{% if page.footer_description %}
-							{% capture footer_description %}{% include_relative _texts/{{ page.footer_description }}%}{% endcapture %}
-							{{ footer_description | markdownify }}
-							{% endif %}
+						{% if page.footer_description %}
+						{% capture footer_description %}{% include_relative _texts/{{ page.footer_description }}%}{%
+						endcapture %}
+						{{ footer_description | markdownify }}
+						{% endif %}
 					</div>
 					<div class="col-sm-2 text-left">
 						<h2 class="footer-heading mb-4">Quick Links</h2>
@@ -407,25 +409,25 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
 								class="icon-linkedin"></span></a>
 						<a href="https://www.youtube.com/c/FBKresearch"" class=" pl-0 pr-1"><span
 								class="icon-youtube"></span></a>
-					</div>
-				</div>
-				<div class="row pt-1 mt-1 text-center">
-					<div class="col-sm-12">
-						<div class="border-top pt-5">
-							<p class="text-left">
-								<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img
-										alt="Creative Commons License" style="border-width:0"
-										src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />the contents
-								of this website are
-								under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative
-									Commons Attribution 4.0 International License</a>.
-							</p>
-						</div>
+						<br/><br/>
+						<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img
+								alt="Creative Commons License" style="border-width:0"
+								src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
 					</div>
 				</div>
 			</div>
 		</footer>
 	</div>
+	<!-- START Bootstrap-Cookie-Alert -->
+	<div class="alert text-center cookiealert" role="alert">
+		<b>FBK websites use cookies <a href="https://www.fbk.eu/en/privacy-cookies-policy/" target="_blank">More info
+				about Privacy and cookies policy</a>
+
+			<button type="button" class="btn btn-primary btn-sm acceptcookies">
+				I agree
+			</button>
+	</div>
+	<!-- END Bootstrap-Cookie-Alert -->
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
 	<script src="js/jquery-ui.js"></script>
@@ -441,6 +443,7 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
 	<script src="js/aos.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
 	<script src="js/jquery.sticky.js"></script>
+	<script src="js/cookiealert.js"></script>
 	<script src="js/main.js"></script>
 </body>
 
