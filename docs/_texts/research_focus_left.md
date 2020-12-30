@@ -1,8 +1,7 @@
 ## Integrative AI
-Combine AI with NON-AI approaches and competences to:
+**Contaminate AI** techniques with approaches from other **socio-technical fields** to better
+* **understand** complex dynamics
+* support **decision making
+* promote **change**
 
-* understand the dynamics
-* support decision making
-* promote the change
-
-in key areas of Digital Society 
+in key areas of Digital Society.
