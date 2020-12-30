@@ -3,7 +3,7 @@ https://fbk-digis.github.io/web/
 
 ## instructions
 ### metadata
-all the meta description are in **_layout/default.html** lines 23-42)
+all the meta description are in **_layout/default.html** (lines 23-42)
 
 ### texts
 in the directory **_texts** you can find all the texts for:
