@@ -134,7 +134,11 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
 		</div>
 		<div class="site-section" id="vision">
 			<div class="container">
-				<br /><br />
+				<div class=" row mb-5 justify-content-center">
+					<div class="col">
+						<br/><br/>
+					</div>
+				</div>
 				<div class="row mb-5 justify-content-center">
 					<div class="col-md-6 text-center">
 						<h2 class="section-title mb-3">
@@ -159,20 +163,25 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
 						</div>
 					</div>
 				</div>
-				<br/>
-				<div class="col" style="padding: 0pt">
-					<p class="text-left">
-						<strong>Digital Society is a research center of Fondazione Bruno Kessler (FBK)</strong>
-						formed by a multidisciplinary team of more than 100 researchers, technologists and managers (including PhD
-						students)
-						organized in 13 research units dedicated to specific research areas in the ICT domain
-						and 2 support units focusing on project management and technology maturation.
-					</p>
+				<div class=" row mb-5 justify-content-center">
+					<div class="col">
+						<p class="justify-content-center">
+							{% if page.description %}
+							{% capture description %}{% include_relative _texts/{{ page.description }}%}{% endcapture %}
+							{{ description | markdownify }}
+							{% endif %}
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="site-section bg-light" id="research">
 			<div class="container">
+				<div class=" row mb-5 justify-content-center">
+					<div class="col">
+						<br /><br />
+					</div>
+				</div>
 				<div class="row mb-5 justify-content-center">
 					<div class="col-md-6 text-center">
 						<br />
@@ -212,9 +221,13 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
 		</div>
 		<div class="site-section" id="impact">
 			<div class="container">
+				<div class=" row mb-5 justify-content-center">
+					<div class="col">
+						<br /><br />
+					</div>
+				</div>
 				<div class="row mb-5 justify-content-center">
 					<div class="col-md-6 text-center">
-						<br />
 						<h2 class="section-title mb-3">Impact Strategy</h2>
 					</div>
 				</div>
@@ -251,9 +264,13 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
 		</div>
 		<div class="site-section bg-light" id="organization">
 			<div class="container">
+				<div class=" row mb-5 justify-content-center">
+					<div class="col">
+						<br /><br />
+					</div>
+				</div>
 				<div class="row mb-5">
 					<div class="col-12 text-center">
-						<br />
 						<h2 class="section-title mb-3">Organization</h2>
 					</div>
 				</div>
@@ -313,12 +330,12 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
 				<div class="row align-items-stretch">
 					{% for unit in site.data.support_units_digis %}
 					{% assign fdelay = fdelay | plus: 30 %}
-					<div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos-delay="{{ fdelay }}">
+					<div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="{{ fdelay }}">
 						<div class="unit-4 d-flex">
 							<div class="unit-4-icon mr-4"><img src="images/units/{{ unit.logo }}" /></div>
 							<div>
 								<a href="https://pmg.fbk.eu">
-									<h3>{{ unit.short_name }}<< /h3>
+									<h3>{{ unit.short_name }}</h3>
 								</a>
 								<h4 class="section-sub-title">{{ unit.name }}
 								</h4>
@@ -334,10 +351,16 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
 		</div>
 		<div class="site-section" id="contact-section">
 			<div class="container">
+				<div class=" row mb-5 justify-content-center">
+					<div class="col">
+						<br /><br />
+					</div>
+				</div>
 				<div class="row mb-5">
 					<div class="col-12 text-center">
-						<br />
-						<h2 class="section-title mb-3">Contact us</h2>
+						<h2 class="section-title mb-3">
+							Contact us
+						</h2>
 					</div>
 				</div>
 				{% assign contact_name = site.data.contact.name %}
