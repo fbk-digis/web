@@ -1,3 +1,1 @@
-**Digital technology** has a pervasive impact on our life and is reshaping our society.
-
-The **challenge** is to ensure that digital technology helps create a more **sustainable, inclusive and secure digital society.**
+**Digital technology** has a pervasive impact on our lives and is reshaping our society.  The **challenge** is to ensure that digital technology becomes a stepping stone to create a more **sustainable, inclusive and secure society**.
