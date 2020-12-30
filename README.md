@@ -7,10 +7,12 @@ all the meta description are in **_layout/default.html** (lines 23-42)
 
 ### texts
 in the directory **_texts** you can find all the texts for:
-- the mission
-- the vision
+- mission
+- vision
+- description
 - the three columns of research focus
 - the three columns of impact foucs
+- footer description for FBK
 
 ### custom data
 in the directory **_data** you can find the data for 
