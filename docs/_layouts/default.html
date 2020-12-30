@@ -382,11 +382,10 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
 				<div class="row pt-1 mt-1 justify-content-center">
 					<div class="col-sm-8">
 						<h2 class="footer-heading mb-4">About FBK</h2>
-						<p>FBK is a top Research Institute in Italy, with a community of over 400 researchers and 120
-							doctoral students;
-							organized in 2 scientific hubs dedicated to technology and to human and social sciences,
-							FBK aims to excel in science with particular emphasis on interdisciplinary approaches and
-							social impact.</p>
+							{% if page.footer_description %}
+							{% capture footer_description %}{% include_relative _texts/{{ page.footer_description }}%}{% endcapture %}
+							{{ footer_description | markdownify }}
+							{% endif %}
 					</div>
 					<div class="col-sm-2 text-left">
 						<h2 class="footer-heading mb-4">Quick Links</h2>
