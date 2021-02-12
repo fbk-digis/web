@@ -10,7 +10,7 @@ twitter_username: jekyllrb
 github_username:  fbk-digis
 encoding: utf-8
 markdown: kramdown
-
+google_analytics: UA-4545411-61
 # Build settings
 theme: minima
 plugins:
