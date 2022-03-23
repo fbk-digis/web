@@ -366,7 +366,7 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
                     <div id="changeseminar" class="carousel slide" class="carousel slide" data-interval="false" data-ride="carousel" data-pause="hover">
                         <div class="carousel-inner">
                             {% for seminar in site.data.seminars %}
-                            {% if forloop.first %}
+                            {% if forloop.last %}
                                 <div class="carousel-item active">
                                 <p class="d-block w-100">
                             {% else %}
@@ -381,7 +381,7 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
                                     <p>{{seminar.bio}}</p>
                                 </div>
                             </p>
-                                {% endfor %}
+                           {% endfor %}
                         </div>
                         <p class="text-center">
                             <br/><Br/>
@@ -395,8 +395,27 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
                             <i class="icon-arrow-right text-black" aria-hidden="true"> </i>
                             </a>
                         </p>
+                       </div>
                     </div>
-                </div>
+                        <table id="seminarstable"  class="display" style="width:100%">
+                                <thead>
+                        	<tr>
+                        		<td>date</td>
+                        		<td>title</td>
+                        		<td>speakers</td>
+                        	</tr>
+                        	</thead>
+                        	<tbody>
+                           	 {% for seminar in site.data.seminars %}
+				<tr>
+				        <td>{{ seminar.date }}</td>
+                        		<td>{{ seminar.title }}</td>
+                        		<td>{{ seminar.speakers }}</td>
+				</tr>
+				 {% endfor %}
+				</tbody>
+                        </table>
+     
             </div>
             <div class="site-section bg-white" id="contact-section">
                 <div class="container">
@@ -496,6 +515,11 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
         </script>
         <!-- End Google Analytics -->
 	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.js"></script>
+	<script>
+	$(document).ready(function() {
+    		$('#seminarstable').DataTable();
+	} );
+	</script>
 </body>
 
 </html>
