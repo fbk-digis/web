@@ -20,19 +20,17 @@
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/cookiealert.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.css"/>
- 
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.css" />
+
 
     <meta name="title" content="Digital Society - FBK">
-    <meta name="description"
-        content="Digital Society is a research center of Fondazione Bruno Kessler that performs advanced research and develops digital technologies to address key challenges of the digital society. It consists of a multidisciplinary team of more than 100 researchers, technologists and managers (including PhD students) organized in 13 research units dedicated to specific research areas in the ICT domain and 2 support units focusing on project management and technology maturation.">
+    <meta name="description" content="Digital Society is a research center of Fondazione Bruno Kessler that performs advanced research and develops digital technologies to address key challenges of the digital society. It consists of a multidisciplinary team of more than 100 researchers, technologists and managers (including PhD students) organized in 13 research units dedicated to specific research areas in the ICT domain and 2 support units focusing on project management and technology maturation.">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://digis.fbk.eu">
     <meta property="og:title" content="Digital Society - FBK">
-    <meta property="og:description"
-        content="Digital Society is a research center of Fondazione Bruno Kessler that performs advanced research and develops digital technologies to address key challenges of the digital society. It consists of a multidisciplinary team of more than 100 researchers, technologists and managers (including PhD students) organized in 13 research units
+    <meta property="og:description" content="Digital Society is a research center of Fondazione Bruno Kessler that performs advanced research and develops digital technologies to address key challenges of the digital society. It consists of a multidisciplinary team of more than 100 researchers, technologists and managers (including PhD students) organized in 13 research units
 dedicated to specific research areas in the ICT domain and 2 support units focusing on project management and technology maturation.">
     <meta property="og:image" content="images/placeholder.png">
 
@@ -62,8 +60,7 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
                 <div class="row align-items-center">
                     <!-- START Bootstrap-Cookie-Alert -->
                     <div class="alert text-center cookiealert" role="alert">
-                        <strong>FBK websites use cookies</strong> - <a
-                            href="https://www.fbk.eu/en/privacy-cookies-policy/" target="_blank">More info
+                        <strong>FBK websites use cookies</strong> - <a href="https://www.fbk.eu/en/privacy-cookies-policy/" target="_blank">More info
                             about Privacy and cookies policy</a>
                         <button type="button" class="btn btn-primary btn-sm acceptcookies">
                             I agree
@@ -124,20 +121,17 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
                 </div>
             </div>
         </header>
-        <div class="site-blocks-cover overlay" style="background-image: url(images/digital_society_fbk_bg.jpg);"
-            data-aos="fade" data-stellar-background-ratio="0.5">
+        <div class="site-blocks-cover overlay" style="background-image: url(images/digital_society_fbk_bg.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-md-12" data-aos="fade-up" data-aos-delay="400">
                         <div class="row mb-4">
                             <div class="col-md-7">
                                 <h1>Digital Society</h1>
-                                <p class="mb-5 lead">Research in Digital Technology for a Sustainable, Inclusive and
-                                    Secure Society
+                                <p class="mb-5 lead">Research in Digital Technology for a Sustainable, Inclusive and Secure Society
                                 </p>
                                 <div>
-                                    <a href="#vision"
-                                        class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block">Discover
+                                    <a href="#vision" class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block">Discover
                                         us</a>
                                 </div>
                             </div>
@@ -159,8 +153,7 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
                             Vision
                         </h2>
                         <div class="text-left">
-                            {% if page.vision %} {% capture vision %}{% include_relative _texts/{{ page.vision }}%}{%
-                            endcapture %} {{ vision | markdownify }} {% endif %}
+                            {% if page.vision %} {% capture vision %}{% include_relative _texts/{{ page.vision }}%}{% endcapture %} {{ vision | markdownify }} {% endif %}
                         </div>
                     </div>
                     <div class="col-md-6 text-center">
@@ -168,16 +161,14 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
                             Mission
                         </h2>
                         <div class="text-left">
-                            {% if page.mission %} {% capture mission %}{% include_relative _texts/{{ page.mission }}%}{%
-                            endcapture %} {{ mission | markdownify }} {% endif %}
+                            {% if page.mission %} {% capture mission %}{% include_relative _texts/{{ page.mission }}%}{% endcapture %} {{ mission | markdownify }} {% endif %}
                         </div>
                     </div>
                 </div>
                 <div class=" row mb-5 justify-content-center">
                     <div class="col">
                         <p class="justify-content-center">
-                            {% if page.description %} {% capture description %}{% include_relative _texts/{{
-                            page.description }}%}{% endcapture %} {{ description | markdownify }} {% endif %}
+                            {% if page.description %} {% capture description %}{% include_relative _texts/{{ page.description }}%}{% endcapture %} {{ description | markdownify }} {% endif %}
                         </p>
                     </div>
                 </div>
@@ -204,19 +195,13 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
                 </div>
                 <div class="row mb-5 justify-content-center">
                     <div class="col-md-4 text-left">
-                        {% if page.research_focus_left %} {% capture research_focus_left %}{% include_relative _texts/{{
-                        page.research_focus_left }}%}{% endcapture %} {{ research_focus_left | markdownify }} {% endif
-                        %}
+                        {% if page.research_focus_left %} {% capture research_focus_left %}{% include_relative _texts/{{ page.research_focus_left }}%}{% endcapture %} {{ research_focus_left | markdownify }} {% endif %}
                     </div>
                     <div class="col-md-4 text-left">
-                        {% if page.research_focus_center %} {% capture research_focus_center %}{% include_relative
-                        _texts/{{ page.research_focus_center }}%}{% endcapture %} {{ research_focus_center | markdownify
-                        }} {% endif %}
+                        {% if page.research_focus_center %} {% capture research_focus_center %}{% include_relative _texts/{{ page.research_focus_center }}%}{% endcapture %} {{ research_focus_center | markdownify }} {% endif %}
                     </div>
                     <div class="col-md-4 text-left">
-                        {% if page.research_focus_right %} {% capture research_focus_right %}{% include_relative
-                        _texts/{{ page.research_focus_right }}%}{% endcapture %} {{ research_focus_right | markdownify
-                        }} {% endif %}
+                        {% if page.research_focus_right %} {% capture research_focus_right %}{% include_relative _texts/{{ page.research_focus_right }}%}{% endcapture %} {{ research_focus_right | markdownify }} {% endif %}
                     </div>
                 </div>
             </div>
@@ -241,19 +226,13 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
                 </div>
                 <div class="row mb-5 justify-content-center">
                     <div class="col-md-4 text-left">
-                        {% if page.impact_strategy_left %} {% capture impact_strategy_left %}{% include_relative
-                        _texts/{{ page.impact_strategy_left }}%}{% endcapture %} {{ impact_strategy_left | markdownify
-                        }} {% endif %}
+                        {% if page.impact_strategy_left %} {% capture impact_strategy_left %}{% include_relative _texts/{{ page.impact_strategy_left }}%}{% endcapture %} {{ impact_strategy_left | markdownify }} {% endif %}
                     </div>
                     <div class="col-md-4 text-left">
-                        {% if page.impact_strategy_center %} {% capture impact_strategy_center %}{% include_relative
-                        _texts/{{ page.impact_strategy_center }}%}{% endcapture %} {{ impact_strategy_center |
-                        markdownify }} {% endif %}
+                        {% if page.impact_strategy_center %} {% capture impact_strategy_center %}{% include_relative _texts/{{ page.impact_strategy_center }}%}{% endcapture %} {{ impact_strategy_center | markdownify }} {% endif %}
                     </div>
                     <div class="col-md-4 text-left">
-                        {% if page.impact_strategy_right %} {% capture impact_strategy_right %}{% include_relative
-                        _texts/{{ page.impact_strategy_right }}%}{% endcapture %} {{ impact_strategy_right | markdownify
-                        }} {% endif %}
+                        {% if page.impact_strategy_right %} {% capture impact_strategy_right %}{% include_relative _texts/{{ page.impact_strategy_right }}%}{% endcapture %} {{ impact_strategy_right | markdownify }} {% endif %}
                     </div>
                 </div>
             </div>
@@ -270,9 +249,7 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
                         <h2 class="section-title mb-3">Organization</h2>
                     </div>
                 </div>
-                {% assign director_name = site.data.director.name %} {% assign director_photo = site.data.director.photo
-                %} {% assign director_url = site.data.director.url %} {% assign director_description_url =
-                site.data.director.description_url %} {% assign director_description_anchor
+                {% assign director_name = site.data.director.name %} {% assign director_photo = site.data.director.photo %} {% assign director_url = site.data.director.url %} {% assign director_description_url = site.data.director.description_url %} {% assign director_description_anchor
                 = site.data.director.description_anchor %}
                 <div class="row mb-5">
                     <div class="col-12 text-center">
@@ -300,8 +277,7 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
                     </div>
                 </div>
                 <div class="row align-items-stretch">
-                    {% assign int fdelay = 100 %} {% for unit in site.data.research_units_digis %} {% assign fdelay =
-                    fdelay | plus: 30 %}
+                    {% assign int fdelay = 100 %} {% for unit in site.data.research_units_digis %} {% assign fdelay = fdelay | plus: 30 %}
                     <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="{{ fdelay }}">
                         <div class="unit-4 d-flex">
                             <div class="unit-4-icon mr-4"><img src="images/units/{{ unit.logo }}" /></div>
@@ -334,8 +310,7 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
                                 </a>
                                 <h4 class="section-sub-title">{{ unit.name }}
                                 </h4>
-                                <p>{{ unit.description }}<br />visit <a class="text-primary"
-                                        href="{{ unit.url }}">website</a></p>
+                                <p>{{ unit.description }}<br />visit <a class="text-primary" href="{{ unit.url }}">website</a></p>
                                 <p>head <a class="text-primary" href="{{unit.url_head}}">{{ unit.head }}</a></p>
                             </div>
                         </div>
@@ -356,170 +331,171 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
                     <div class="col-12 text-center">
                         <h3 class="section-sub-title">Seminars</h3>
                         <h2 class="section-title mb-3">All our seminars</h2>
-                        <p class="text-left">The Digis center periodically organizes a series of research seminars which
-                            they share with anyone interested.
-                            Here you can scroll through our program
+                        <p class="text-left">The Digis center periodically organizes a series of research seminars which they share with anyone interested. Here you can scroll through our program
                         </p>
                     </div>
                 </div>
                 <div class="row mb-5">
                     <div id="changeseminar" class="carousel slide" class="carousel slide" data-interval="false" data-ride="carousel" data-pause="hover">
                         <div class="carousel-inner">
-                            {% for seminar in site.data.seminars %}
-                            {% if forloop.last %}
-                                <div class="carousel-item active">
+                            {% for seminar in site.data.seminars %} {% if forloop.last %}
+                            <div class="carousel-item active">
                                 <p class="d-block w-100">
-                            {% else %}
-                                <div class="carousel-item">
-                            {% endif %}
-                                    <h3 class="text-black">{{ seminar.title }}</h3>
-                                    <h4 class="text-black">{{ seminar.speakers }}</h4>
-                                    <p>{{ seminar.date }} - {{seminar.location}}</p>
-                                    <h4 class="text-black">abstract</h4>
-                                    <p>{{seminar.abstract }}</p>
-                                    <h4 class="text-black">bio</h4>
-                                    <p>{{seminar.bio}}</p>
-                                </div>
-                            </p>
-                           {% endfor %}
-                        </div>
-                        <p class="text-center">
-                            <br/><Br/>
-                        You can scroll through the seminars by clicking on the arrows below<br/>
-                        <Br/>
-                        <a href="#changeseminar" role="button" data-slide="next">
-                            <i class="icon-arrow-left text-black"aria-hidden="true"> </i>
-                            </a>
+                                    {% else %}
+                                    <div class="carousel-item">
+                                        {% endif %}
+                                        <h3 class="text-black">{{ seminar.title }}</h3>
+                                        <h4 class="text-black">{{ seminar.speakers }}</h4>
+                                        <p>{{ seminar.date }} - {{seminar.location}}</p>
+                                        <h4 class="text-black">abstract</h4>
+                                        <p>{{seminar.abstract }}</p>
+                                        <h4 class="text-black">bio</h4>
+                                        <p>{{seminar.bio}}</p>
+                                    </div>
+                                </p>
+                                {% endfor %}
+                            </div>
+                            <p class="text-center">
+                                <br/>
+                                <Br/> You can scroll through the seminars by clicking on the arrows below<br/>
+                                <Br/>
+                                <a href="#changeseminar" role="button" data-slide="next">
+                                    <i class="icon-arrow-left text-black" aria-hidden="true"> </i>
+                                </a>
 
-                        <a href="#changeseminar" role="button" data-slide="next">
-                            <i class="icon-arrow-right text-black" aria-hidden="true"> </i>
-                            </a>
-                        </p>
-                       </div>
-                    </div>
-                        <table id="seminarstable"  class="display" style="width:100%">
-                                <thead>
-                        	<tr>
-                        		<td>date</td>
-                        		<td>title</td>
-                        		<td>speakers</td>
-                        	</tr>
-                        	</thead>
-                        	<tbody>
-                           	 {% for seminar in site.data.seminars %}
-				<tr>
-				        <td>{{ seminar.date }}</td>
-                        		<td>{{ seminar.title }}</td>
-                        		<td>{{ seminar.speakers }}</td>
-				</tr>
-				 {% endfor %}
-				</tbody>
-                        </table>
-     
-            </div>
-            <div class="site-section bg-white" id="contact-section">
-                <div class="container">
-                    <div class=" row mb-5 justify-content-center">
-                        <div class="col">
-                            <br /><br /><hr/>
+                                <a href="#changeseminar" role="button" data-slide="next">
+                                    <i class="icon-arrow-right text-black" aria-hidden="true"> </i>
+                                </a>
+                            </p>
                         </div>
                     </div>
-                    <div class="row mb-5">
-                        <div class="col-12 text-center">
-                            <h2 class="section-title mb-3">
-                                Contact us
-                            </h2>
+                    <table id="seminarstable" class="display" style="width:100%">
+                        <thead>
+                            <tr>
+                                <td>date</td>
+                                <td>title</td>
+                                <td>speakers</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for seminar in site.data.seminars %}
+                            <tr>
+                                <td data-sort="<%= seminar.date.strftime(' %A %d %b %Y ') %>">
+                                    {{seminar.date}}
+                                </td>
+                                <td>{{ seminar.title }}</td>
+                                <td>{{ seminar.speakers }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+
+                </div>
+                <div class="site-section bg-white" id="contact-section">
+                    <div class="container">
+                        <div class=" row mb-5 justify-content-center">
+                            <div class="col">
+                                <br /><br />
+                                <hr/>
+                            </div>
                         </div>
-                    </div>
-                    {% assign contact_name = site.data.contact.name %} {% assign contact_address =
-                    site.data.contact.address
-                    %} {% assign contact_email = site.data.contact.email %}
-                    <div class="row justify-content-center">
-                        <div class="col-md-7 mb-5 text-left">
-                            <img src="images/contactus.svg" class="float-right" />
-                            <h3>{{ contact_name }}</h3>
-                            <h4>Fondazione Bruno Kessler</h4>
-                            <h4>{{ contact_address }}</h4>
-                            <h4>Email: {{ contact_email }}</h4>
+                        <div class="row mb-5">
+                            <div class="col-12 text-center">
+                                <h2 class="section-title mb-3">
+                                    Contact us
+                                </h2>
+                            </div>
+                        </div>
+                        {% assign contact_name = site.data.contact.name %} {% assign contact_address = site.data.contact.address %} {% assign contact_email = site.data.contact.email %}
+                        <div class="row justify-content-center">
+                            <div class="col-md-7 mb-5 text-left">
+                                <img src="images/contactus.svg" class="float-right" />
+                                <h3>{{ contact_name }}</h3>
+                                <h4>Fondazione Bruno Kessler</h4>
+                                <h4>{{ contact_address }}</h4>
+                                <h4>Email: {{ contact_email }}</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <footer class="site-footer bg-light">
-                <div class="container">
-                    <div class="row pt-1 mt-1 justify-content-center">
-                        <div class="col-sm-8">
-                            <h2 class="footer-heading mb-4">About FBK</h2>
-                            {% if page.footer_description %} {% capture footer_description %}{% include_relative
-                            _texts/{{
-                            page.footer_description }}%}{% endcapture %} {{ footer_description | markdownify }} {% endif
-                            %}
-                        </div>
-                        <div class="col-sm-2 text-left">
-                            <h2 class="footer-heading mb-4">Quick Links</h2>
-                            <ul class="list-unstyled">
-                                <li><a href="https://www.fbk.eu">FBK website</a></li>
-                                <li><a href="#">Digital Society - FBK</a></li>
-                                <li><a href="https://magazine.fbk.eu/en/">FBK Magazine</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-2 text-left">
-                            <h2 class="footer-heading mb-4">Follow Us</h2>
-                            <a href="https://www.facebook.com/FutureBuiltonKnowledge/" class="pl-0 pr-1"><span
+                <footer class="site-footer bg-light">
+                    <div class="container">
+                        <div class="row pt-1 mt-1 justify-content-center">
+                            <div class="col-sm-8">
+                                <h2 class="footer-heading mb-4">About FBK</h2>
+                                {% if page.footer_description %} {% capture footer_description %}{% include_relative _texts/{{ page.footer_description }}%}{% endcapture %} {{ footer_description | markdownify }} {% endif %}
+                            </div>
+                            <div class="col-sm-2 text-left">
+                                <h2 class="footer-heading mb-4">Quick Links</h2>
+                                <ul class="list-unstyled">
+                                    <li><a href="https://www.fbk.eu">FBK website</a></li>
+                                    <li><a href="#">Digital Society - FBK</a></li>
+                                    <li><a href="https://magazine.fbk.eu/en/">FBK Magazine</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-2 text-left">
+                                <h2 class="footer-heading mb-4">Follow Us</h2>
+                                <a href="https://www.facebook.com/FutureBuiltonKnowledge/" class="pl-0 pr-1"><span
                                     class="icon-facebook"></span></a>
-                            <a href="https://twitter.com/fbk_research" class="pl-0 pr-1"><span
+                                <a href="https://twitter.com/fbk_research" class="pl-0 pr-1"><span
                                     class="icon-twitter"></span></a>
-                            <a href="https://www.instagram.com/fbkresearch/" class="pl-0 pr-1"><span
+                                <a href="https://www.instagram.com/fbkresearch/" class="pl-0 pr-1"><span
                                     class="icon-instagram"></span></a>
-                            <a href="https://www.linkedin.com/company/fbkresearch/" class="pl-0 pr-1"><span
+                                <a href="https://www.linkedin.com/company/fbkresearch/" class="pl-0 pr-1"><span
                                     class="icon-linkedin "></span></a>
-                            <a href="https://www.youtube.com/c/FBKresearch" class="pl-0 pr-1"><span
+                                <a href="https://www.youtube.com/c/FBKresearch" class="pl-0 pr-1"><span
                                     class="icon-youtube"></span></a>
-                            <br /><br />
-                            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img
-                                    alt="Creative Commons License" style="border-width:0" src="images/ccby.png"
-                                    class="float-right" /></a>
+                                <br /><br />
+                                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="images/ccby.png" class="float-right" /></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </footer>
-        </div>
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/jquery-migrate-3.0.1.min.js"></script>
-        <script src="js/jquery-ui.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/jquery.stellar.min.js"></script>
-        <script src="js/jquery.countdown.min.js"></script>
-        <!--
+                </footer>
+            </div>
+            <script src="js/jquery-3.3.1.min.js"></script>
+            <script src="js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="js/jquery-ui.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/owl.carousel.min.js"></script>
+            <script src="js/jquery.stellar.min.js"></script>
+            <script src="js/jquery.countdown.min.js"></script>
+            <!--
 	<script src="js/bootstrap-datepicker.min.js"></script>
 	-->
-        <script src="js/jquery.easing.1.3.js"></script>
-        <script src="js/aos.js"></script>
-        <script src="js/jquery.fancybox.min.js"></script>
-        <script src="js/jquery.sticky.js"></script>
-        <script src="js/cookiealert.js"></script>
-        <script src="js/main.js"></script>
-        <!-- Google Analytics -->
-        <script>
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+            <script src="js/jquery.easing.1.3.js"></script>
+            <script src="js/aos.js"></script>
+            <script src="js/jquery.fancybox.min.js"></script>
+            <script src="js/jquery.sticky.js"></script>
+            <script src="js/cookiealert.js"></script>
+            <script src="js/main.js"></script>
+            <!-- Google Analytics -->
+            <script>
+                (function(i, s, o, g, r, a, m) {
+                    i['GoogleAnalyticsObject'] = r;
+                    i[r] = i[r] || function() {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+                    a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                    a.async = 1;
+                    a.src = g;
+                    m.parentNode.insertBefore(a, m)
+                })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-            ga('create', 'UA-4545411-61', 'auto');
-            ga('send', 'pageview');
-        </script>
-        <!-- End Google Analytics -->
-	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.js"></script>
-	<script>
-	$(document).ready(function() {
-    		$('#seminarstable').DataTable();
-	} );
-	</script>
+                ga('create', 'UA-4545411-61', 'auto');
+                ga('send', 'pageview');
+            </script>
+            <!-- End Google Analytics -->
+            <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+            <script type="text/javascript" src="https://cdn.datatables.net/plug-ins/1.11.5/sorting/datetime-moment.js"></script>
+            <script>
+                $(document).ready(function() {
+                    $.fn.dataTable.moment('A d b YYYY');
+                    $('#seminarstable').DataTable();
+                });
+            </script>
 </body>
 
 </html>
