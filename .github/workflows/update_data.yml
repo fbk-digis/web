@@ -22,7 +22,7 @@ jobs:
       - name: Install requirements
         run: cd bin;pip install -r requirements.txt
       - name: run download
-        run: python  seminars.py
+        run: cd bin;python seminars.py
       - name: Commit and push if it changed
         run: |-
           git config user.name "napo"
