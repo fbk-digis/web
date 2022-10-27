@@ -380,9 +380,7 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
                         <tbody>
                             {% for seminar in site.data.seminars %}
                             <tr>
-                                <td data-sort="<%= seminar.date.strftime(' %A %d %b %Y ') %>">
-                                    {{seminar.date}}
-                                </td>
+                                <td>{{ seminar.date }}</td>
                                 <td>{{ seminar.title }}</td>
                                 <td>{{ seminar.speakers }}</td>
                             </tr>
@@ -488,11 +486,8 @@ dedicated to specific research areas in the ICT domain and 2 support units focus
             </script>
             <!-- End Google Analytics -->
             <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.11.5/datatables.min.js"></script>
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
-            <script type="text/javascript" src="https://cdn.datatables.net/plug-ins/1.11.5/sorting/datetime-moment.js"></script>
             <script>
                 $(document).ready(function() {
-                    $.fn.dataTable.moment('A d b YYYY');
                     $('#seminarstable').DataTable();
                 });
             </script>
