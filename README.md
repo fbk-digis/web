@@ -23,6 +23,7 @@ in the directory **_data** you can find the data for
 in the directory **_data** there are two CSV files:
 - [research_units_digis.csv](https://github.com/fbk-digis/web/blob/main/docs/_data/research_units_digis.csv)
 - [support_units_digis.csv](https://github.com/fbk-digis/web/blob/main/docs/_data/support_units_digis.csv)
+
 both are tables where you can add the information about each unit (logo, acronymous, name, description, website, head of the unit and personal page)<br/>
 Note:<br/>
 the logos are in SVG format and stored in images/units
