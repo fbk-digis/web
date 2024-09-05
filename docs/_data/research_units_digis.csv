@@ -1,13 +1,7 @@
 logo,short_name,name,url,description,head,url_head
 chub.svg,CHuB,Complex Human Behavior Lab,https://chub.fbk.eu,Data-informed statistical modelling of individual and collective human behavior,Riccardo Gallotti,https://twitter.com/ricgallotti
-dkm.svg,DKM,Data and Knowledge Management,https://dkm.fbk.eu/,"Learning knowledge from data, integrating knowledge and reasoning about knowledge to support intelligent applications",Luciano Serafini,https://dkm.fbk.eu/people/profile/serafini
-dvl.svg,DVL,Deep Visual Learning,#,Design and development of deep learning architectures for visual recognition tasks,Elisa Ricci,#
 dcl.svg,DCL,Digital Commons Lab,https://dcl.fbk.eu/,"Design, development and analysis of digital commons based on open data",Maurizio Napolitano,https://www.linkedin.com/in/napolnx/
 dh.svg,DH,Digital Humanities,https://dh.fbk.eu/,Extraction and analysis of textual information from non-standard multilingual data to address societal issues,Sara Tonelli,https://dh.fbk.eu/author/sara/
 e3da.svg,E3DA,Energy Efficient Embedded Digital Architectures,https://e3da.fbk.eu/,Design and development of energy efficient networked embedded systems for IoT applications with AI inside,Elisabetta Farella,https://e3da.fbk.eu/people/profile/efarella
-i3.svg,I3,Intelligent Interfaces and Interaction,https://i3.fbk.eu,Co-design and evaluation of socio-technical systems with specific reference to human-centred AI-based systems,Massimo Zancanaro,https://i3.fbk.eu/people/profile/zancana
-land.svg,LanD,Language and Dialog Technology,https://land.fbk.eu/,Language technology for sentiment analysis and persuasive communication,Marco Guerini,#
-mobs.svg,MOBS,Mobile and Social Computing,#,"AI and computational social science models for building more sustainable and efficient organizations, cities, and financial systems",Bruno Lepri,#
 modis.svg,MoDiS,Motivational Digital Systems,https://modis.fbk.eu/,Artificial Intelligence for motivation and behavior change in socio-technical systems,Annapaola Marconi,https://das.fbk.eu/people/profile/marconi
 rsde.svg,RSDE,Remote Sensing for Digital Earth,https://rsde.fbk.eu/,Remote sensing and AI for the digital monitoring and the sustainable management of the Earth,Francesca Bovolo,https://rsde.fbk.eu/people/profile/bovolo
-stek.svg,STEK,Speech Technology Lab,https://speechtek.fbk.eu/,Technologies for audio and speech processing,Alessio Brutti,https://speechtek.fbk.eu/author/speechtek_admin/
