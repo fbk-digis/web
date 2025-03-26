@@ -1,12 +1,15 @@
 title: Digital Society center - Fondazione Bruno Kessler
 email: segreteria.digis@fbk.eu
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Digital Society is a research center of Fondazione Bruno
+  Kessler (FBK) formed by a multidisciplinary team of more than
+  100 researchers, technologists and managers (including PhD
+  students) organized in 7 research units dedicated to specific
+  research areas in the ICT domain and 2 support units
+  focusing on project management and technology maturation.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
+twitter_username: fbk_research
 github_username:  fbk-digis
 encoding: utf-8
 markdown: kramdown
