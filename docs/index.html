@@ -1,0 +1,792 @@
+---
+layout: null
+title: "DigiS – Center for Digital Society | FBK"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>{{ page.title }}</title>
+
+    {% assign hero = site.text | where: "slug", "hero" | first %}
+    {% assign about_intro = site.text | where: "slug", "about-intro" | first %}
+    {% assign about_body = site.text | where: "slug", "about-body" | first %}
+    {% assign research_focus_intro = site.text | where: "slug", "research-focus-intro" | first %}
+    {% assign impact_intro = site.text | where: "slug", "impact-intro" | first %}
+  
+
+  {% assign digis = site.data.digis %}
+  {% assign contact = digis.contact %}
+  {% assign director = site.data.director %}
+  {% assign stats = digis.stats %}
+
+    <meta name="description" content="DigiS is the Center for Digital Society at Fondazione Bruno Kessler (FBK), an interdisciplinary hub that studies and shapes the digital transformation of society.">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+
+
+    <!-- =======================================================
+  * Template Name: eBusiness
+  * Template URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
+  * Updated: Jun 18 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid header-inner d-flex align-items-center">
+
+      <!-- SINISTRA: LOGO FBK -->
+      <div class="header-left d-flex align-items-center">
+        <a href="https://www.fbk.eu" class="logo d-flex align-items-center" target="_blank" rel="noopener">
+          <img src="{{ '/assets/img/fbk_logo.svg' | relative_url }}" alt="FBK logo"
+            class="fbk-logo">
+        </a>
+      </div>
+
+      <!-- CENTRO: DIGITAL SOCIETY -->
+      <div class="header-center text-center">
+        <!--<span class="digis-title-main">DIGIS</span>-->
+        <h1><span class="digis-title">Digital Society</span></h1>
+      </div>
+
+      <!-- DESTRA: MENU / HAMBURGER -->
+      <div class="header-right d-flex align-items-center justify-content-end">
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Research Focus</a></li>
+            <li><a href="#features">Impact Areas</a></li>
+            <li><a href="#assets">Assets & Platforms</a></li>
+            <li><a href="#team">Research Units</a></li>
+            <li><a href="#contact">Contacts</a></li>
+          </ul>
+          <!-- HAMBURGER SEMPRE VISIBILE (desktop + mobile) -->
+          <i class="mobile-nav-toggle bi bi-list"></i>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+  <!-- End Header -->
+
+
+
+
+    <main class="main">
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+                            <h2>Digital Society</h2>
+                            {% if hero %}
+                            {{ hero.content | markdownify }}
+                            {% else %}
+                            <p>DigiS - is the center for the Digital Society at Fondazione Bruno Kessler (FBK). We bring together computer science, social sciences and the humanities to understand, design and govern digital technologies that serve people, communities and public institutions.</p>
+                            {% endif %}
+                            <div class="hero-btns">
+                                <a href="#services" class="btn btn-primary">Explore our research</a>
+                                <a href="#team" class="btn btn-outline">Meet the research units</a>
+                            </div>
+                            <div class="hero-stats">
+                              <div class="stat-item">
+                                <h3>
+                                  <span
+                                    data-purecounter-start="0"
+                                    data-purecounter-end="{{ stats.years | default: 15 }}"
+                                    data-purecounter-duration="1"
+                                    class="purecounter"></span>+
+                                </h3>
+                                <p>Years working on digital society</p>
+                              </div>
+                              <div class="stat-item">
+                                <h3>
+                                  <span
+                                    data-purecounter-start="0"
+                                    data-purecounter-end="{{ stats.units | default: 9 }}"
+                                    data-purecounter-duration="1"
+                                    class="purecounter"></span>
+                                </h3>
+                                <p>Interdisciplinary research units</p>
+                              </div>
+                              <div class="stat-item">
+                                <h3>
+                                  <span
+                                    data-purecounter-start="0"
+                                    data-purecounter-end="{{ stats.people | default: 70 }}"
+                                    data-purecounter-duration="1"
+                                    class="purecounter"></span>+
+                                </h3>
+                                <p>Researchers and collaborators</p>
+                              </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
+                            <img src="assets/img/about/about-8.webp" alt="DigiS – Center for Digital Society at FBK" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /Hero Section -->
+
+
+        <!-- About Section -->
+        <section id="about" class="about section light-background">
+
+            <div class="container section-title" data-aos="fade-up">
+                <h2>About Digital Society</h2>
+                {% if about_intro %}
+                {{ about_intro.content | markdownify }}
+                {% else %}
+                <p>DigiS is FBK’s Center for Digital Society. It coordinates research and innovation on how digital technologies transform society and how they can be governed as digital commons.</p>
+                {% endif %}
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4 align-items-center justify-content-between">
+
+                    <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
+                        <span class="about-meta">Who We Are</span>
+                        <h2 class="about-title">An interdisciplinary hub on digital society</h2>
+
+                        {% if about_body %}
+                        <div class="about-description">
+                            {{ about_body.content | markdownify }}
+                        </div>
+                        {% else %}
+                        <p class="about-description">
+                            DigiS brings together research units working on AI and data science, digital ethics and law, digital humanities, education and digital literacy, complex socio-technical systems, Earth observation and edge AI. The center connects these competences to address
+                            real-world challenges together with public institutions, communities and private actors.
+                        </p>
+                        {% endif %}
+
+                        <div class="row feature-list-wrapper">
+                            <div class="col-md-6">
+                                <ul class="feature-list">
+                                    <li><i class="bi bi-check-circle-fill"></i> Interdisciplinary research on digital society</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Strong collaboration with public administrations</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Open data, open source and digital commons</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="feature-list">
+                                    <li><i class="bi bi-check-circle-fill"></i> Human-centred and responsible AI</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Education and capacity building on AI &amp; data</li>
+                                    <li><i class="bi bi-check-circle-fill"></i> Long-term partnerships and co-designed projects</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>  
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /About Section -->
+
+        <!-- Stats Section -->
+        <section id="stats" class="stats section">
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+                <div class="row gy-4 align-items-center">
+                    <div class="col-lg-7">
+                        <div class="row gy-4">
+                            <div class="col-lg-6">
+                                <div class="stats-item d-flex">&nbsp;
+                                    <i class="bi bi-building flex-shrink-0"></i>
+                                    <div>
+                                     <span
+                                        data-purecounter-start="0"
+                                        data-purecounter-end="{{ digis.stats.units }}"
+                                        data-purecounter-duration="1"
+                                        class="purecounter"></span>
+                                        <p><strong>Research units</strong> across AI, data, humanities and social sciences</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="stats-item d-flex">&nbsp;
+                                    <i class="bi bi-diagram-3 flex-shrink-0"></i>
+                                    <div>
+                                     <span
+                                      data-purecounter-start="0"
+                                      data-purecounter-end="{{ digis.stats.impact_areas }}"
+                                      data-purecounter-duration="1"
+                                      class="purecounter"></span>
+                                        <p><strong>Main impact areas</strong> on communities, education and resilience</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="stats-item d-flex">&nbsp;
+                                    <i class="bi bi-globe-europe-africa flex-shrink-0"></i>
+                                    <div>
+                                    <span
+                                      data-purecounter-start="0"
+                                      data-purecounter-end="{{ digis.stats.international_projects }}"
+                                      data-purecounter-duration="1"
+                                      class="purecounter"></span>
+                                        <p><strong>International projects</strong> and collaborations in recent years</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="stats-item d-flex">&nbsp;
+                                    <i class="bi bi-people flex-shrink-0"></i>
+                                    <div>
+                                    <span
+                                      data-purecounter-start="0"
+                                      data-purecounter-end="{{ digis.stats.people }}"
+                                      data-purecounter-duration="1"
+                                      class="purecounter"></span>
+                                        <p><strong>People involved</strong> including researchers, fellows and students</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                      <div class="DigiS-schema-wrapper position-relative">
+
+                        {%- comment -%}
+                        Include Jekyll con l’SVG.
+                        Il file è: _includes/digis_schema.svg
+                        {%- endcomment -%}
+                        {% include digis_schema.svg %}
+
+                        <!-- Finestra overlay che mostrerà i testi -->
+                        <div id="DigiS-overlay" class="DigiS-overlay"></div>
+                      </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /Stats Section -->
+
+        <!-- Services Section -> Research Focus -->
+        <section id="services" class="services section">
+
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Research Focus</h2>
+                {% if research_focus_intro %}
+                {{ research_focus_intro.content | markdownify }}
+                {% else %}
+                <p>DigiS organises its research around a set of interconnected domains that link AI, data and digital media with society, policy and the environment.</p>
+                {% endif %}
+            </div>
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row gy-4 justify-content-center">
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <article class="service-item">
+                            <span class="service-icon rounded-circle">
+                                <i class="bi bi-shield-check"></i>
+                            </span>
+                            <h3>Digital Ethics &amp; Governance</h3>
+                            <p>Legal, ethical and policy frameworks for AI and data spaces, with a focus on fundamental rights, transparency and accountability in the European context.</p>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="150">
+                        <article class="service-item">
+                            <span class="service-icon rounded-circle">
+                                <i class="bi bi-diagram-3"></i>
+                            </span>
+                            <h3>Complex Socio-Technical Systems</h3>
+                            <p>Modelling and analysing complex systems that emerge from the interaction between people, platforms, infrastructures and algorithms.</p>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                        <article class="service-item">
+                            <span class="service-icon rounded-circle">
+                                <i class="bi bi-translate"></i>
+                            </span>
+                            <h3>Language, Media &amp; Platforms</h3>
+                            <p>Research on language technologies, digital media ecosystems and online platforms, with attention to misinformation, public debate and participation.</p>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
+                        <article class="service-item">
+                            <span class="service-icon rounded-circle">
+                                <i class="bi bi-motherboard"></i>
+                            </span>
+                            <h3>AI, Data &amp; Edge Computing</h3>
+                            <p>Methods and tools for AI, machine learning and edge computing applied to mobility, energy, urban environments and environmental monitoring.</p>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                        <article class="service-item">
+                            <span class="service-icon rounded-circle">
+                                <i class="bi bi-people"></i>
+                            </span>
+                            <h3>AI &amp; Data Literacy</h3>
+                            <p>Educational programmes, training and co-design activities that help citizens, students and professionals engage critically with AI and data.</p>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
+                        <article class="service-item">
+                            <span class="service-icon rounded-circle">
+                                <i class="bi bi-book-half"></i>
+                            </span>
+                            <h3>Digital Humanities &amp; Culture</h3>
+                            <p>Digital methods for the study and communication of cultural heritage, memory and civic participation, bridging technology and the humanities.</p>
+                        </article>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /Services Section -->
+
+        <!-- Features Section -> Impact Areas -->
+        <section id="features" class="features section light-background">
+
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Impact Areas</h2>
+                {% if impact_intro %}
+                {{ impact_intro.content | markdownify }}
+                {% else %}
+                <p>DigiS works with partners on concrete challenges where digital technologies can create social impact, improve public services and support democratic governance.</p>
+                {% endif %}
+            </div>
+
+            <div class="container">
+
+                <div class="row gy-4 align-items-center features-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-md-5">
+                        <img src="assets/img/features/features-1.webp" class="img-fluid" alt="Communities and public administrations">
+                    </div>
+                    <div class="col-md-7">
+                        <h3>Communities &amp; Public Administrations</h3>
+                        <p class="fst-italic">
+                            Supporting cities, territories and public institutions in using data and AI as public infrastructure and digital commons.
+                        </p>
+                        <ul>
+                            <li>Data spaces and digital twins for urban planning and public services.</li>
+                            <li>Participation platforms and civic technologies for inclusive decision-making.</li>
+                            <li>Evidence-based policy tools and dashboards for local and regional authorities.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row gy-4 align-items-center features-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-md-5 order-md-2">
+                        <img src="assets/img/features/features-2.webp" class="img-fluid" alt="Education, culture and skills">
+                    </div>
+                    <div class="col-md-7 order-md-1">
+                        <h3>Education, Culture &amp; Skills</h3>
+                        <p class="fst-italic">
+                            Developing AI and data literacy in schools, higher education and lifelong learning, and rethinking cultural institutions in the digital age.
+                        </p>
+                        <ul>
+                            <li>Educational programmes on AI &amp; data for teachers, students and professionals.</li>
+                            <li>Serious games and digital storytelling for cultural heritage and civic education.</li>
+                            <li>Collaborations with museums, libraries and media organisations.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row gy-4 align-items-center features-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-md-5">
+                        <img src="assets/img/features/features-3.webp" class="img-fluid" alt="Secure and resilient societies">
+                    </div>
+                    <div class="col-md-7">
+                        <h3>Secure &amp; Resilient Societies</h3>
+                        <p class="fst-italic">
+                            Using AI, data and remote sensing to support climate adaptation, risk management, critical infrastructure and public safety.
+                        </p>
+                        <ul>
+                            <li>Monitoring of climate risks and urban heat islands with Earth observation data.</li>
+                            <li>Tools to support crisis management, emergency response and resilience planning.</li>
+                            <li>Research on misinformation, online harms and democratic resilience.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /Features Section -->
+
+        <!-- Portfolio Section -> Assets & Platforms -->
+      <!-- ======= Assets Section (from assets.csv) ======= -->
+      <section id="assets" class="portfolio section-bg">
+
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Assets &amp; Platforms</h2>
+          {% assign assets_intro = site.texts | where: "slug", "assets-intro" | first %}
+          {% if assets_intro %}
+            {{ assets_intro.content | markdownify }}
+          {% else %}
+            <p>DigiS develops reusable digital assets – platforms, services and tools – that can be adapted and extended with partners.</p>
+          {% endif %}
+        </div>
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4 portfolio-container">
+
+            {% for asset in site.data.assets %}
+            <div class="col-xl-3 col-md-6 portfolio-item">
+              <div class="portfolio-wrap">
+                <img src="{{ '/assets/img/assets/' | append: asset.image | relative_url }}" class="img-fluid"
+                  alt="{{ asset.title }}">
+                <div class="portfolio-info">
+                  <h4>{{ asset.title }}</h4>
+                  <p>{{ asset.short_description }}</p>
+                  <div class="portfolio-links">
+                    <a href="#"
+                      class="portfolio-lightbox"
+                      data-glightbox="type: inline"
+                      data-gallery="assetsGallery"
+                      data-title="{{ asset.title | escape }}"
+                      data-description="{{ asset.long_description | markdownify | strip_newlines | escape }}">
+                      <i class="bi bi-info-circle"></i>
+                    </a>
+                    {% if asset.url %}
+                    <a href="{{ asset.url }}" target="_blank" rel="noopener">
+                      <i class="bi bi-box-arrow-up-right"></i>
+                    </a>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+
+          </div>
+        </div>
+
+      </section>
+      <!-- End Assets Section -->
+
+        <!-- Team Section -> Director + Research & Support Units -->
+        <section id="team" class="team section">
+
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Research Units</h2>
+                {% assign units_intro = site.text | where: "slug", "units-intro" | first %}
+                {% if units_intro %}
+                {{ units_intro.content | markdownify }}
+                {% else %}
+                <p>DigiS is organised into research units and support units that collaborate on projects and programmes across the Center.</p>
+                {% endif %}
+            </div>
+
+            <div class="container">
+
+          {% if director %}
+            <div class="row gy-4 mb-5 align-items-center director-section" data-aos="fade-up" data-aos-delay="50">
+                <div class="col-md-4">
+                    {% if director.photo %}
+                    <div class="director-photo">
+                        <img src="assets/img/director/{{ director.photo }}" alt="{{ director.name }}" class="img-fluid rounded">
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="col-md-8">
+                    <div class="director-info">
+                        <h3 class="mb-1">{{ director.name }}</h3>
+                        <p class="mb-1 fw-semibold">{{ director.role }}</p>
+                        {% if director.affiliation %}
+                        <p class="text-muted mb-3">{{ director.affiliation }}</p>
+                        {% endif %}
+                        {% if director.bio %}
+                        <p class="mb-3">{{ director.bio }}</p>
+                        {% endif %}
+                        <div class="social">
+                            {% if director.linkedin %}
+                            <a href="{{ director.linkedin }}" target="_blank" rel="noopener">
+                                <i class="bi bi-linkedin"></i> LinkedIn
+                            </a>
+                            {% endif %}
+                            {% if director.email %}
+                            {% if director.linkedin %}&nbsp;·&nbsp;{% endif %}
+                            <a href="mailto:{{ director.email }}">
+                                <i class="bi bi-envelope"></i> Email
+                            </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
+
+
+                <div class="row gy-4">
+                    {% assign research_units = site.data.research_units_digis %}
+                    {% for unit in research_units %}
+                    <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="{{ forloop.index | times: 50 }}">
+                        <div class="member">
+                            <div class="pic">
+                                {% if unit.logo %}
+                                <img src="assets/img/units/{{ unit.logo }}" class="img-fluid" alt="{{ unit.name }} logo">
+                                {% else %}
+                                <div class="placeholder-logo d-flex align-items-center justify-content-center">
+                                    <span>{{ unit.short_name | default: unit.name }}</span>
+                                </div>
+                                {% endif %}
+                            </div>
+                            <div class="member-info">
+                                <h4>{{ unit.name }}</h4>
+                                {% if unit.short_name %}<span>{{ unit.short_name }}</span>{% endif %}
+                                {% if unit.description %}
+                                <p>{{ unit.description }}</p>
+                                {% endif %}
+                                {% if unit.head %}
+                                <p class="mt-2"><strong>Head:</strong> {{ unit.head }}</p>
+                                {% endif %}
+                                <div class="social">
+                                    {% if unit.url and unit.url != '#' %}
+                                    <a href="{{ unit.url }}" target="_blank" rel="noopener">Unit page</a>
+                                    {% endif %}
+                                    {% if unit.url_head %}
+                                    {% if unit.url and unit.url != '#' %}&nbsp;·&nbsp;{% endif %}
+                                    <a href="{{ unit.url_head }}" target="_blank" rel="noopener">Head profile</a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <div class="row gy-4 mt-5">
+                    <div class="col-12" data-aos="fade-up">
+                        <h3 class="h5 mb-3">Support Units</h3>
+                    </div>
+                    {% assign support_units = site.data.support_units_digis %}
+                    {% for unit in support_units %}
+                    <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="{{ forloop.index | times: 50 }}">
+                        <div class="member">
+                            <div class="pic">
+                                {% if unit.logo %}
+                                <img src="assets/img/units/{{ unit.logo }}" class="img-fluid" alt="{{ unit.name }} logo">
+                                {% else %}
+                                <div class="placeholder-logo d-flex align-items-center justify-content-center">
+                                    <span>{{ unit.short_name | default: unit.name }}</span>
+                                </div>
+                                {% endif %}
+                            </div>
+                            <div class="member-info">
+                                <h4>{{ unit.name }}</h4>
+                                {% if unit.short_name %}<span>{{ unit.short_name }}</span>{% endif %}
+                                {% if unit.description %}
+                                <p>{{ unit.description }}</p>
+                                {% endif %}
+                                {% if unit.head %}
+                                <p class="mt-2"><strong>Head:</strong> {{ unit.head }}</p>
+                                {% endif %}
+                                <div class="social">
+                                    {% if unit.url and unit.url != '#' %}
+                                    <a href="{{ unit.url }}" target="_blank" rel="noopener">Unit page</a>
+                                    {% endif %}
+                                    {% if unit.url_head %}
+                                    {% if unit.url and unit.url != '#' %}&nbsp;·&nbsp;{% endif %}
+                                    <a href="{{ unit.url_head }}" target="_blank" rel="noopener">Head profile</a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+
+            </div>
+
+        </section>
+        <!-- /Team Section -->
+<!-- Contact Section -->
+<section id="contact" class="pricing section light-background">
+  <div class="container" data-aos="fade-up">
+
+    <!-- Titolo centrato -->
+    <div class="section-title text-center">
+      <h2>Contact Us</h2>
+
+      <!-- Testo centrato ma con contenuto allineato a sinistra -->
+      <p class="mx-auto text-start" style="max-width: 700px;">
+        Do you want to explore new ideas, experiment with a project, or propose a collaboration?<br/>
+        DigiS brings together research, technology, and social impact: get in touch and let’s build the next step together.
+      </p>
+    </div>
+
+    <!-- Sezione contatti al centro -->
+    <div class="row gy-4 mb-5 justify-content-center align-items-center director-section"
+         data-aos="fade-up" data-aos-delay="50">
+
+      <!-- Colonna foto -->
+      <div class="col-md-4 d-flex justify-content-center">
+        <div class="director-photo">
+          <img src="assets/img/contacts.webp"
+               alt="FBK Scientific Hub" class="img-fluid rounded">
+        </div>
+      </div>
+
+      <!-- Colonna testo (allineato a sinistra) -->
+      <div class="col-md-6">
+        <div class="director-info text-start">
+          <h3 class="mb-1">Secretariat Office</h3>
+          <p>
+            {{ contact.address_line1 }}<br/>
+            {{ contact.address_line2 }}
+          </p>
+          <p class="mt-3"><strong>Phone:</strong> <span>{{ contact.phone }}</span></p>
+          <p><strong>Email:</strong> <span>{{ contact.email }}</span></p>
+          <p><strong>More about us<br/></strong><span>read our <a href="assets/docs/digis_strategy.pdf">strategy document</a></span></p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+    </main>
+
+    <footer id="footer" class="footer">
+
+        <div class="footer-top">
+            <div class="container">
+The FBK's Digital Society center acts as a bridge between research and society
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="copyright">
+                    &copy; <strong><span>CC-BY FBK Digital Society</span></strong>
+                </div>
+                <div class="credits">
+                built and maintained by <a href="https://github.com/napo">napo</a> · template by <a href="https://bootstrapmade.com/">bootstrapmade</a> · Hosted on <a href="https://github.com/fbk-DigiS/web">GitHub Pages</a>.
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+<script>
+  // Esporta i dati da _data/DigiS_topics.yml verso JavaScript
+  window.DigiSTopics = {{ site.data.DigiS_topics | jsonify }};
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const overlay = document.getElementById("DigiS-overlay");
+  if (!overlay) return;
+
+  // Dati presi da _data/DigiS_topics.yml
+  const topics = window.DigiSTopics || {};
+
+  function showTopic(key) {
+    const topic = topics[key];
+    if (!topic) {
+      console.warn("Topic non trovato per id:", key);
+      return;
+    }
+
+    const lines = topic.lines || [];
+
+    overlay.innerHTML = `
+      <h4>${topic.title}</h4>
+      <ul>
+        ${lines.map(line => `<li>${line}</li>`).join("")}
+      </ul>
+    `;
+    overlay.classList.add("active");
+  }
+
+  function hideTopic() {
+    overlay.classList.remove("active");
+  }
+
+  // Attacca gli eventi alle aree dello schema
+  Object.keys(topics).forEach(function (id) {
+    const el = document.getElementById(id);
+    if (!el) {
+      console.warn("Elemento SVG non trovato per id:", id);
+      return;
+    }
+
+    el.addEventListener("mouseenter", function () {
+      showTopic(id);
+    });
+
+    el.addEventListener("mouseleave", function () {
+      hideTopic();
+    });
+  });
+});
+</script>
+
+</body>
+
+</html>
+

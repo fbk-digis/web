@@ -1,0 +1,39 @@
+newmedia:
+  title: "New media & language technologies"
+  lines:
+    - "Natural language technologies"
+    - "Education and culture"
+    - "AI and data science in media analysis"
+
+digitaltwin:
+  title: "Digital twins & game-based systems"
+  lines:
+    - "Motivational game-based systems"
+    - "Serious games"
+    - "Behavioral science"
+    - "Civic digital twins and complex system modeling"
+
+remotesensing:
+  title: "Remote sensing & Earth observation"
+  lines:
+    - "Earth observation"
+    - "Space exploration"
+    - "Remote sensing"
+    - "Trustworthy AI"
+
+literacy:
+  title: "AI & data literacy"
+  lines:
+    - "AI/data fluency"
+    - "Tools for regulatory compliance"
+    - "Data visualization"
+    - "Evidence-based policymaking"
+
+edgeai:
+  title: "Edge AI & embedded systems"
+  lines:
+    - "Privacy-preserving architectures"
+    - "Low-power solutions"
+    - "Embedded systems"
+    - "Complex system modeling"
+
