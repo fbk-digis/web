@@ -469,7 +469,7 @@ title: "DigiS – Center for Digital Society | FBK"
           {% if assets_intro %}
             {{ assets_intro.content | markdownify }}
           {% else %}
-            <p>DigiS develops reusable digital assets – platforms, services and tools – that can be adapted and extended with partners.</p>
+            <p>DIGIS develops reusable digital assets – platforms, services and tools – that can be adapted and extended with partners.</p>
           {% endif %}
         </div>
 
@@ -479,25 +479,55 @@ title: "DigiS – Center for Digital Society | FBK"
             {% for asset in site.data.assets %}
             <div class="col-xl-3 col-md-6 portfolio-item">
               <div class="portfolio-wrap">
-                <img src="{{ '/assets/img/assets/' | append: asset.image | relative_url }}" class="img-fluid"
-                  alt="{{ asset.title }}">
+
+                <!-- Immagine principale dell’asset -->
+                <img src="{{ '/assets/img/assets/' | append: asset.image | relative_url }}"
+                     class="img-fluid"
+                     alt="{{ asset.title }}">
+
                 <div class="portfolio-info">
                   <h4>{{ asset.title }}</h4>
-                  <p>{{ asset.short_description }}</p>
+
+                  {% if asset.subtitle %}
+                    <p>{{ asset.subtitle }}</p>
+                  {% endif %}
+
+                  <!-- Meta info: unit e TRL -->
+                  <div class="asset-meta mb-2">
+                    {% if asset.unit %}
+                      <span class="badge bg-light text-dark me-1">Unit: {{ asset.unit }}</span>
+                    {% endif %}
+                    {% if asset.trl %}
+                      <span class="badge bg-light text-dark">TRL {{ asset.trl }}</span>
+                    {% endif %}
+                  </div>
+
                   <div class="portfolio-links">
+
+                    <!-- Info: descrizione lunga in Glightbox (inline) -->
                     <a href="#"
-                      class="portfolio-lightbox"
-                      data-glightbox="type: inline"
-                      data-gallery="assetsGallery"
-                      data-title="{{ asset.title | escape }}"
-                      data-description="{{ asset.long_description | markdownify | strip_newlines | escape }}">
+                       class="portfolio-lightbox"
+                       data-glightbox="type: inline"
+                       data-gallery="assetsGallery-{{ asset.id | default: asset.title | slugify }}"
+                       data-title="{{ asset.title | escape }}"
+                       data-description="{{ asset.description | markdownify | strip_newlines | escape }}">
                       <i class="bi bi-info-circle"></i>
                     </a>
+
+                    <!-- Link principale (sito / demo) -->
                     {% if asset.url %}
-                    <a href="{{ asset.url }}" target="_blank" rel="noopener">
+                    <a href="{{ asset.url }}" target="_blank" rel="noopener" title="Open website">
                       <i class="bi bi-box-arrow-up-right"></i>
                     </a>
                     {% endif %}
+
+                    <!-- Link GitHub, se presente -->
+                    {% if asset.github %}
+                    <a href="{{ asset.github }}" target="_blank" rel="noopener" title="GitHub repository">
+                      <i class="bi bi-github"></i>
+                    </a>
+                    {% endif %}
+
                   </div>
                 </div>
               </div>
@@ -509,6 +539,7 @@ title: "DigiS – Center for Digital Society | FBK"
 
       </section>
       <!-- End Assets Section -->
+
 
         <!-- Team Section -> Director + Research & Support Units -->
         <section id="team" class="team section">
