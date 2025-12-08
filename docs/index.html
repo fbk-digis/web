@@ -296,7 +296,7 @@ title: "DigiS – Center for Digital Society | FBK"
                         {% include digis_schema.svg %}
 
                         <!-- Finestra overlay che mostrerà i testi -->
-                        <div id="DigiS-overlay" class="DigiS-overlay"></div>
+                        <div id="digis-overlay" class="digis-overlay"></div>
                       </div>
                     </div>
                 </div>
@@ -539,7 +539,7 @@ title: "DigiS – Center for Digital Society | FBK"
 
       </section>
       <!-- End Assets Section -->
-
+f
 
         <!-- Team Section -> Director + Research & Support Units -->
         <section id="team" class="team section">
@@ -766,15 +766,15 @@ The FBK's Digital Society center acts as a bridge between research and society
     <script src="assets/js/main.js"></script>
 <script>
   // Esporta i dati da _data/DigiS_topics.yml verso JavaScript
-  window.DigiSTopics = {{ site.data.DigiS_topics | jsonify }};
+  window.digistopics = {{ site.data.digis_topics | jsonify }};
 </script>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const overlay = document.getElementById("DigiS-overlay");
+  const overlay = document.getElementById("digis-overlay");
   if (!overlay) return;
 
   // Dati presi da _data/DigiS_topics.yml
-  const topics = window.DigiSTopics || {};
+  const topics = window.digistopics || {};
 
   function showTopic(key) {
     const topic = topics[key];
