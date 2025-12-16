@@ -1,3 +1,3 @@
-At the heart of the DigiS research activity lies **Digital Ethics**, understood not only as a set of philosophical and ethical principles but as a collection of technical and actionable methods for compliance, trustworthiness, and responsible AI adoption. 
-This central role reflects the idea that every technological innovation must be developed and deployed in ways that safeguard human rights, ensure fairness, and respect societal values.
-Each of the five research domains connects to this ethical core in complementary ways. 
+The Digital Society Center’s research strategy is organized around five interconnected domains that collectively address the complexity of digital transformation. 
+These domains, Complex Socio-Technical Systems, Language and Media, AI and Data Literacy, Edge AI, and Remote Sensing, are unified and guided by a central commitment to Digital Ethics. 
+This structure ensures that technological innovation is not only advanced and interdisciplinary, but also ethical, trustworthy, and socially responsible.
