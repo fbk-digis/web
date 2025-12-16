@@ -1,17 +1,17 @@
 newmedia:
-  title: "New media & language technologies"
-  lines:
-    - "Natural language technologies"
-    - "Education and culture"
-    - "AI and data science in media analysis"
-
-digitaltwin:
-  title: "Digital twins & game-based systems"
+  title: "Complex "
   lines:
     - "Motivational game-based systems"
     - "Serious games"
     - "Behavioral science"
     - "Civic digital twins and complex system modeling"
+
+digitaltwin:
+  title: "Language and Media"
+  lines:
+    - "Natural language technologies"
+    - "Education and Culture"
+    - "AI and data science in media analysis"
 
 remotesensing:
   title: "Remote sensing & Earth observation"
