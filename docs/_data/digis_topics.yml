@@ -6,23 +6,22 @@ newmedia:
     - "Behavioral science"
     - "Civic digital twins and complex system modeling"
 
-digitaltwin:
+remotesensing:
   title: "Language and Media"
   lines:
     - "Natural language technologies"
     - "Education and Culture"
     - "AI and data science in media analysis"
 
-remotesensing:
-  title: "Remote sensing & Earth observation"
+digitaltwin:
+  title: "Remote sensing"
   lines:
     - "Earth observation"
     - "Space exploration"
-    - "Remote sensing"
     - "Trustworthy AI"
 
 literacy:
-  title: "AI & data literacy"
+  title: "AI and Data literacy"
   lines:
     - "AI/data fluency"
     - "Tools for regulatory compliance"
@@ -30,7 +29,7 @@ literacy:
     - "Evidence-based policymaking"
 
 edgeai:
-  title: "Edge AI & embedded systems"
+  title: "Edge AI"
   lines:
     - "Privacy-preserving architectures"
     - "Low-power solutions"
