@@ -197,7 +197,7 @@
 
 /* Spazio tra logo e scritta (se vuoi tenerlo) */
 .header-center {
-  padding: 0 100px; /* “staccata” dal logo come da tua richiesta precedente */
+  padding: 0 10px; /* “staccata” dal logo come da tua richiesta precedente */
 }
 
 /* Menu / hamburger */
